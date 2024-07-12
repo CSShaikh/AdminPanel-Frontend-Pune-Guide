@@ -1,0 +1,36 @@
+<div class="create-cab-container">
+  <header class="header">
+    <button (click)="back()" class="back-button">Back To Dashboard</button>
+
+    <h1 style="text-align: center;"> Create Cab</h1>
+  </header>
+  <header class="header">
+
+</header>
+    
+  <form (ngSubmit)="onSubmit()" class="form-content">
+    <div class="content-area">
+    
+    
+    <div class="mb-3">
+      <label for="carName" class="form-label">Car Name:</label>
+      <input type="text" class="form-control" id="carName" required [(ngModel)]="c.carName" name="carName">
+    </div>
+    <div class="mb-3">
+      <label for="cabType" class="form-label">Cab Type:</label>
+      <input type="text" class="form-control" id="cabType" required [(ngModel)]="c.cabType" name="cabType">
+    </div>
+    <div class="mb-3">
+      <label for="cabNo" class="form-label">Cab Number:</label>
+      <input type="text" class="form-control" id="cabNo" required [(ngModel)]="c.cabNo" name="cabNo">
+    </div>
+    <div class="mb-3">
+      <label for="placeId" class="form-label">Place Id:</label>
+      <input type="number" class="form-control" id="placeId" required [(ngModel)]="c.placeId" name="placeId">
+    </div>
+    <button type="submit" class="btn btn-primary submit-button">Submit</button>
+  </div>
+  </form>
+</div>
+
+

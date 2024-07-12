@@ -1,0 +1,35 @@
+<div style="margin: 0% 5%;">
+    <header class="header">
+        <button (click)="back()" class="back-button">Back To Dashboard</button>
+
+    </header>
+    <table class="table">
+       
+        <thead>
+            <tr>
+                <th scope="col">Cab Id</th>
+                <th scope="col">Car Name</th>
+                <th scope="col">Cab Type</th>
+                <th scope="col">Cab Number</th>
+                <th scope="col">Place Id</th>
+                <th scope="col">Actions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of cabs | async">
+                <td>{{c.id}}</td>
+                <td>{{c.carName}}</td>
+                <td>{{c.cabType}}</td>
+                <td>{{c.cabNo}}</td>
+                <td>{{c.placeId}}</td>
+                <td><button (click)="deleteCab(c.id)" class="btn btn-danger">Delete</button>
+                    <button (click)="findCab(c.id)" class="btn btn-info"
+                        style="margin-left: 10px">View</button>
+                    <button (click)="updateCab(c.id)" class="btn btn-info"
+                        style="margin-left: 10px">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

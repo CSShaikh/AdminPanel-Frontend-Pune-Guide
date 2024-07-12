@@ -1,0 +1,61 @@
+/* Styles for the details container */
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items horizontally at center */
+}
+
+/* Styles for the header section */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Space out items within the header */
+  align-items: center; /* Align items vertically at center */
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Styles for the back button */
+.back-button {
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding inside the button */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Styles for the details title */
+.details-title {
+  margin-top: 20px; /* Space above the title */
+}
+
+/* Styles for the hotel details */
+.details > div {
+  margin-top: 20px; /* Space between title and details */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px; /* Fixed width for the details container */
+  background-color: #f9f9f9;
+}
+
+/* Styles for the hotel details headings */
+.details > div h4 {
+  margin-bottom: 5px; /* Space below each heading */
+}
+
+/* Styles for the hotel details paragraphs */
+.details > div p {
+  margin-top: 0; /* Remove default top margin for paragraphs */
+}

@@ -1,0 +1,78 @@
+/* Styles for the main container */
+.create-cab-container {
+  max-width: 600px; /* Adjust max-width as needed */
+  margin: 20px auto; /* Center align and provide margin */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Box shadow for depth */
+}
+
+/* Styles for the header section */
+.header {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out items */
+  margin-bottom: 20px; /* Space below header */
+}
+
+/* Styles for the back button */
+.back-button {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for the form content */
+.form-content {
+  width: 100%; /* Full width */
+}
+
+/* Styles for the content area */
+.content-area {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for form labels */
+.form-label {
+  font-weight: bold;
+}
+
+/* Styles for form inputs */
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styles for submit button */
+.submit-button {
+  background-color: #28a745; /* Green background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.submit-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

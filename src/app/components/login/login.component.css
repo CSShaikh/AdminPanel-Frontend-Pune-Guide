@@ -1,0 +1,59 @@
+/* Styles for the login container */
+.login-container {
+  max-width: 400px; /* Adjust max-width as needed */
+  margin: 50px auto; /* Center align and provide top margin */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Box shadow for depth */
+}
+
+/* Styles for form groups */
+.form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Styles for labels */
+label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 5px; /* Space below labels */
+  font-weight: bold; /* Bold font for labels */
+}
+
+/* Styles for form inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%; /* Full width */
+  padding: 8px; /* Padding inside inputs */
+  font-size: 16px; /* Font size */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 4px; /* Border radius */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Styles for submit button */
+button[type="submit"] {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block; /* Display button as block element */
+  width: 100%; /* Full width */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for error message */
+div.error-message {
+  color: #dc3545; /* Red color for error message */
+  font-size: 14px; /* Font size */
+  margin-top: 10px; /* Space above error message */
+}

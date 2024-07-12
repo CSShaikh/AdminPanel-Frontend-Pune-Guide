@@ -1,0 +1,18 @@
+<div class="details-container" *ngIf="cab">
+  <header class="header">
+    <button (click)="back()" class="back-button">Back To Get All Cab</button>
+
+    </header>
+    <h3 class="details-title">Details of Cab ID: {{cab.id}}</h3>
+    <div class="details">
+      <h4>Cab ID:</h4>
+      <p>{{cab.id}}</p>
+      <h4>Car Name:</h4>
+      <p>{{cab.carName}}</p>
+      <h4>Cab Type:</h4>
+      <p>{{cab.cabType}}</p>
+      <h4>Cab Number:</h4>
+      <p>{{cab.cabNo}}</p>
+    </div>
+  </div>
+  

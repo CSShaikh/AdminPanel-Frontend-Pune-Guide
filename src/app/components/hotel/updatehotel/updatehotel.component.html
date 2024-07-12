@@ -1,0 +1,22 @@
+<form (ngSubmit)="onSubmit()">
+  <header class="header">
+    <button (click)="back()" class="back-button">Back To Get All Hotel </button>
+
+    </header>
+    <h1>This is a Update Hotel Details</h1>
+    
+    <div class="mb-3">
+      <label for="hotel" class="form-label">Hotel Name :</label>
+      <input type="text" class="form-control" id="hotel"  required [(ngModel)]="hotel.hotelName" name="hotel">
+    </div>
+    <div class="mb-3">
+      <label for="starRating" class="form-label">Hote Star Rating :</label>
+      <input type="text" class="form-control" id="starRating" required [(ngModel)]="hotel.starRating" name="starRating">
+    </div>
+    <div class="mb-3">
+      <label for="mobileNo" class="form-label">Hotel Mobile No :</label>
+      <input type="text" class="form-control" id="mobileNo" required [(ngModel)]="hotel.mobileNo" name="mobileNo">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Edit</button>
+  </form>

@@ -1,0 +1,39 @@
+<div style="margin: 0% 5%;">
+    <header class="header">
+        <button (click)="back()" class="back-button">Back To Dashboard</button>
+
+    </header>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Place Id</th>
+                <th scope="col">Place Name</th>
+                <th scope="col">Place Description</th>
+                <th scope="col">Place Price</th>
+                <th scope="col">Place Location</th>
+                <th scope="col">Place OpenDays</th>
+                <th scope="col">Place OpenTime</th> 
+                <th scope="col">Place Image</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of places | async">
+                <td>{{p.id}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.description}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.location}}</td>
+                <td>{{p.openDays}}</td>
+                <td>{{p.openTime}}</td>
+                <td>{{p.image}}</td>
+                <td><button (click)="deletePlace(p.id)" class="btn btn-danger">Delete</button>
+                    <button (click)="findPlace(p.id)" class="btn btn-info"
+                        style="margin-left: 10px">View</button>
+                    <button (click)="updatePlace(p.id)" class="btn btn-info"
+                        style="margin-left: 10px">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

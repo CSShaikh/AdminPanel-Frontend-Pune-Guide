@@ -1,0 +1,30 @@
+/* CSS for Cab Details Component */
+.details-container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .details-title {
+    text-align: center;
+    color: #2a3f54;
+    margin-bottom: 15px;
+  }
+  
+  .details {
+    margin-top: 15px;
+  }
+  
+  .details h4 {
+    color: #2a3f54;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .details p {
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,33 @@
+<div style="margin: 0% 5%;">
+    <header class="header">
+        <button (click)="back()" class="back-button">Back To Dashboard</button>
+
+    </header>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Hotel Id</th>
+                <th scope="col">Hotel Name</th>
+                <th scope="col">Hotel Star Rating</th>
+                <th scope="col">Hotel Mobile No</th>
+                <th scope="col">Actions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let h of hotels | async">
+                <td>{{h.id}}</td>
+                <td>{{h.hotelName}}</td>
+                <td>{{h.starRating}}</td>
+                <td>{{h.mobileNo}}</td>
+
+                <td><button (click)="deleteHotel(h.id)" class="btn btn-danger">Delete</button>
+                    <button (click)="findHotel(h.id)" class="btn btn-info"
+                        style="margin-left: 10px">View</button>
+                    <button (click)="updateHotel(h.id)" class="btn btn-info"
+                        style="margin-left: 10px">Edit</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,22 @@
+<div class="hotel-container">
+  <header class="header">
+    <button (click)="back()" class="back-button">Back To Dashboard</button>
+
+    </header>
+  <h2 class="form-title">Add Hotel</h2>
+  <form (ngSubmit)="onSubmit()" class="form-content">
+    <div class="mb-3">
+      <label for="hotelName" class="form-label">Hotel Name:</label>
+      <input type="text" class="form-control" id="hotelName" required [(ngModel)]="h.hotelName" name="hotelName">
+    </div>
+    <div class="mb-3">
+      <label for="starRating" class="form-label">Hotel Star Rating:</label>
+      <input type="number" class="form-control" id="starRating" required [(ngModel)]="h.starRating" name="starRating" min="1" max="5">
+    </div>
+    <div class="mb-3">
+      <label for="mobileNo" class="form-label">Hotel Mobile No:</label>
+      <input type="tel" class="form-control" id="mobileNo" required [(ngModel)]="h.mobileNo" name="mobileNo" pattern="[0-9]{10}">
+    </div>
+    <button type="submit" class="btn btn-primary submit-button">Submit</button>
+  </form>
+</div>

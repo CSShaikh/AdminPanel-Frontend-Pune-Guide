@@ -1,0 +1,76 @@
+/* Styles for the main container */
+div {
+  margin: 0% 5%; /* Adjust margin as needed */
+}
+
+/* Styles for the header section */
+.header {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out items */
+  margin-bottom: 20px; /* Space below header */
+}
+
+/* Styles for the back button */
+.back-button {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for the table */
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+/* Styles for table headers */
+.table th {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+/* Styles for table data cells */
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd; /* Bottom border */
+}
+
+/* Styles for actions buttons in table */
+.table .btn {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table .btn-danger {
+  background-color: #dc3545; /* Red background */
+  color: #fff; /* White text */
+  border: none;
+}
+
+.table .btn-danger:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.table .btn-info {
+  background-color: #17a2b8; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+}
+
+.table .btn-info:hover {
+  background-color: #138496; /* Darker blue on hover */
+}

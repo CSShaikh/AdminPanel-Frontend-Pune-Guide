@@ -1,0 +1,17 @@
+<div style="align-self:center;" class="details" *ngIf="hotel">
+    <header class="header">
+        <button (click)="back()" class="back-button">Back To Get All Hotel</button>
+    
+        </header>  
+    <h3 class="details-title">This is the details of the :{{hotel.id}}</h3>
+    <div class="details">
+    <h4>This is Hotel Id: </h4>
+    <p>{{hotel.id}}</p>
+    <h4>This is Hotel Name: </h4>
+    <p>{{hotel.hotelName}}</p>
+    <h4>This is Hotel Rating: </h4>
+    <p>{{hotel.starRating}}</p>
+    <h4>This is Hotel mobileNo: </h4>
+    <p>{{hotel.mobileNo}}</p>
+</div>
+</div>

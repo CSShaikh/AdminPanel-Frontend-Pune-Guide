@@ -1,0 +1,57 @@
+/* Styles for the main details container */
+.details-container {
+  max-width: 600px; /* Adjust max-width as needed */
+  margin: 20px auto; /* Center align and provide margin */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Box shadow for depth */
+}
+
+/* Styles for the header section */
+.header {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space out items */
+  margin-bottom: 20px; /* Space below header */
+}
+
+/* Styles for the back button */
+.back-button {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for the details title */
+.details-title {
+  margin-top: 20px; /* Space above the title */
+}
+
+/* Styles for the details section */
+.details {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for the details headings */
+.details h4 {
+  margin-bottom: 5px; /* Space below each heading */
+}
+
+/* Styles for the details paragraphs */
+.details p {
+  margin-top: 0; /* Remove default top margin for paragraphs */
+}
